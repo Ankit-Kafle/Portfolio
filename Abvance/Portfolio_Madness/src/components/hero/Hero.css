@@ -1,0 +1,75 @@
+.firstSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+  width: min(1120px, 88vw);
+  margin: 110px auto;
+}
+
+.firstSection > div {
+  width: 50%;
+}
+
+.leftSection {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.25;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  font-size: 14px;
+  font-family: "Karla", sans-serif;
+}
+
+.display {
+  background: linear-gradient(
+    115deg,
+    #eeaf61,
+    #fb9062,
+    #ee5d6c,
+    #ce4993,
+    #6a0d83
+  );
+  padding: 2px;
+}
+
+button {
+  border: none;
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  padding: 1em 1.5em;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: 0.1em;
+}
+
+.display:hover {
+  background: linear-gradient(
+    230deg,
+    #eeaf61,
+    #fb9062,
+    #ee5d6c,
+    #ce4993,
+    #6a0d83
+  );
+}
+
+.display:hover .btn {
+  color: var(--btn-color-hover);
+}
+
+.rightSection img {
+  width: min(420px, 100%);
+  margin-left: auto;
+}
+
+.purple {
+  color: rgb(158, 70, 241);
+}
+
+#element {
+  color: rgb(158, 70, 241);
+}
