@@ -1,11 +1,22 @@
-import React from 'react'
+import React from "react";
+import Hero from "../hero/Hero";
+import Experience from "../experience/Experience";
+import Footer from "../footer/footer";
 
 const Home = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <main>
+        <Hero />
 
-export default Home
+        <hr className="section-divider" />
+
+        <Experience />
+      </main>
+
+      <Footer />
+    </>
+  );
+};
+
+export default Home;

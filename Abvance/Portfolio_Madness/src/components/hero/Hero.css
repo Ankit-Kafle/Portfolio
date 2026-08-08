@@ -75,6 +75,11 @@ button {
   color: rgb(158, 70, 241);
 }
 
+.typed-text {
+  color: rgb(158, 70, 241);
+}
+
+
 @media screen and (max-width: 900px) {
   .firstSection {
     flex-direction: column-reverse;
