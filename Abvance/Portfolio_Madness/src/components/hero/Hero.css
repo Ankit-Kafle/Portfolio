@@ -63,6 +63,7 @@ button {
 
 .rightSection img {
   width: min(420px, 100%);
+  height: auto;
   margin-left: auto;
 }
 
@@ -72,4 +73,49 @@ button {
 
 #element {
   color: rgb(158, 70, 241);
+}
+
+@media screen and (max-width: 900px) {
+  .firstSection {
+    flex-direction: column-reverse;
+    gap: 32px;
+    margin: 72px auto;
+  }
+
+  .firstSection > div {
+    width: 100%;
+  }
+
+  .leftSection {
+    font-size: clamp(1.6rem, 7vw, 2.3rem);
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .rightSection img {
+    width: min(320px, 78vw);
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .firstSection {
+    margin: 56px auto;
+  }
+
+  .leftSection {
+    font-size: 1.45rem;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  button {
+    padding: 0.9em 1.2em;
+  }
 }

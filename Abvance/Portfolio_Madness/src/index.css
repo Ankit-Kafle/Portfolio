@@ -21,3 +21,10 @@ img {
   --btn-color: #cbcbcb;
   --btn-color-hover: #fff;
 }
+
+.section-divider {
+     border: 0;
+        background: rgb(158, 70, 241);
+        height: 1.5px;
+        margin: 60px 84px;
+}

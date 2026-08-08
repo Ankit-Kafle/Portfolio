@@ -1,5 +1,5 @@
 import React from "react";
-import ankitImage from "../../assets/images/Ankit.png";
+import ankitImage from "../../assets/Images/Ankit.png";
 import "./Hero.css";
 
 function Hero()  {

@@ -8,6 +8,7 @@ import Projects from './components/Navbar/Projects'
 import Contact from './components/Navbar/Contact'
 import Notfound from './components/Navbar/Notfound'
 
+import Experience from './components/experience/Experience'
 import Hero from './components/hero/Hero'
 
 const Layout = () => (
@@ -55,10 +56,12 @@ function App() {
 
   return (
     <>
-    <div>
-      <RouterProvider router={router}/>
-    </div>
-      <Hero/>
+      <div>
+        <RouterProvider router={router} />
+      </div>
+      <Hero />
+      <hr className="section-divider" />
+      <Experience />
     </>
   )
 }

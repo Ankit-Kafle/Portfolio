@@ -1,0 +1,148 @@
+.secondSection {
+  width: min(1120px, 88vw);
+  margin: auto;
+  min-height: 620px;
+  padding-bottom: 80px;
+}
+
+.secondSection h1 {
+  font-size: 1.9rem;
+  margin-top: 8px;
+}
+
+.secondSection .box {
+  position: relative;
+  width: 100%;
+  min-height: 390px;
+  margin: 72px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-content: space-between;
+}
+
+.secondSection .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: white;
+}
+
+.secondSection .vertical {
+  height: 96px;
+  width: 2px;
+  background-color: white;
+  position: relative;
+  justify-self: center;
+}
+
+.image-top {
+  width: 70px;
+  max-width: none;
+  position: absolute;
+  top: 93px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.vertical-title {
+  position: absolute;
+  top: 172px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(180px, 22vw);
+  font-size: clamp(13px, 1.4vw, 15px);
+  line-height: 1.35;
+  text-align: center;
+}
+
+.vertical-desc {
+  position: absolute;
+  top: 232px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: gray;
+  width: min(190px, 22vw);
+  font-size: clamp(12px, 1.2vw, 13px);
+  line-height: 1.55;
+  text-align: center;
+}
+
+.textGray {
+  color: gray;
+}
+
+
+@media screen and (max-width: 900px) {
+  .secondSection {
+    width: min(680px, 88vw);
+    min-height: auto;
+  }
+
+  .secondSection .box {
+    min-height: auto;
+    background: transparent;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 34px;
+    margin: 45px 0 0;
+  }
+
+  .secondSection .box::before {
+    display: none;
+  }
+
+  .secondSection .vertical {
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    background-color: transparent;
+    border-left: 2px solid white;
+    justify-self: stretch;
+    padding-left: 92px;
+    padding-bottom: 8px;
+  }
+
+  .image-top {
+    width: 68px;
+    top: 0;
+    left: 34px;
+  }
+
+  .vertical-title,
+  .vertical-desc {
+    position: static;
+    transform: none;
+    width: auto;
+    text-align: left;
+  }
+
+  .vertical-title {
+    padding-top: 2px;
+    font-size: 15px;
+  }
+
+  .vertical-desc {
+    margin-top: 12px;
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .secondSection h1 {
+    font-size: 1.6rem;
+  }
+
+  .secondSection .vertical {
+    padding-left: 78px;
+  }
+
+  .image-top {
+    width: 58px;
+    left: 28px;
+  }
+}
