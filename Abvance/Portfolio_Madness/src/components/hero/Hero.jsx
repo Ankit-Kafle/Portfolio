@@ -5,6 +5,9 @@ import Typed from "typed.js";
 
 import "./Hero.css";
 
+const GITHUB_URL = "https://github.com/yourusername";
+
+
 function Hero() {
   const typedElement = useRef(null);
 
