@@ -36,7 +36,8 @@
   padding: 2px;
 }
 
-button {
+.btn {
+  display: inline-block;
   border: none;
   background-color: var(--btn-bg);
   color: var(--btn-color);
@@ -44,6 +45,17 @@ button {
   font-family: inherit;
   font-size: inherit;
   letter-spacing: 0.1em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-disabled:hover {
+  color: var(--btn-color) !important;
 }
 
 .display:hover {
@@ -120,7 +132,7 @@ button {
     gap: 10px;
   }
 
-  button {
+  .btn {
     padding: 0.9em 1.2em;
   }
 }
